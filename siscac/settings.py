@@ -75,29 +75,16 @@ WSGI_APPLICATION = 'siscac.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cac_test',
-        'USER':'root',
-        'PASSWORD':'hobotnica',
-        'HOST':'localhost',
+        'NAME': 'sql10457445',
+        'USER':'sql10457445',
+        'PASSWORD':'PaxDmz2bZU',
+        'HOST':'sql10.freemysqlhosting.net',
         'PORT':'3306'
     }
 }
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'da6mhrnk9opr33',
-        'USER':'aqcgqqtxgigtff',
-        'PASSWORD':'6dfc56c709cfe46c02e76d850643a776668cb31a64577d3ee3eef848d7e1580f',
-        'HOST':'ec2-18-210-159-154.compute-1.amazonaws.com',
-        'PORT':'5432'
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
