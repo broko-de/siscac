@@ -20,20 +20,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    {% for producto in productos %}
-                    <td>{{producto.id}}</td>
-                    <td>{{producto.nombre}}</td>
-                    <td>
-                        <img src="{{producto.imagen.url}}" alt="{{producto.nombre}}" width="20%">
-                    </td>
-                    <td>$ {{producto.precio}}</td>
-                    <td>
-                        <a id="" class="btn btn-primary" href="{% url 'editar' producto.id %}" role="button">Editar</a>
-                        <a id="" class="btn btn-danger" href="{% url 'eliminar' producto.id %}" role="button">Eliminar</a>
-                    </td>
-                    {% endfor %}
-                </tr>
+                {% for producto in productos %}
+                    <tr>
+                        <td>{{producto.id}}</td>
+                        <td>{{producto.nombre}}</td>
+                        <td>
+                            <img src="{{producto.imagen.url}}" alt="{{producto.nombre}}" width="20%">
+                        </td>
+                        <td>$ {{producto.precio}}</td>
+                        <td>
+                            <a id="" class="btn btn-primary" href="{% url 'editar' producto.id %}" role="button">Editar</a>
+                            <a id="" class="btn btn-danger" href="{% url 'eliminar' producto.id %}" role="button">Eliminar</a>
+                        </td>
+                    </tr>
+                {% endfor %}
             </tbody>
         </table>
         
